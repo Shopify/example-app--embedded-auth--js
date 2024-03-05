@@ -1,0 +1,30 @@
+{
+  "name": "node-app",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon ./bin/www",
+    "shopify": "shopify",
+    "build": "shopify app build",
+    "dev": "shopify app dev",
+    "info": "shopify app info",
+    "generate": "shopify app generate",
+    "deploy": "shopify app deploy"
+  },
+  "dependencies": {
+    "@shopify/app": "^3",
+    "@shopify/app-bridge": "^3.7.10",
+    "@shopify/cli": "^3",
+    "@shopify/cli-hydrogen": "latest",
+    "@shopify/plugin-cloudflare": "latest",
+    "@shopify/shopify-api": "^9.3.1",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "jose": "^5.2.2",
+    "morgan": "~1.9.1",
+    "nodemon": "^3.0.3"
+  }
+}

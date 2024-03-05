@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello</title>
+      <meta name="shopify-api-key" content="c1d9e0cabab6ef54f74fa58a43c7d41e" />
+      <script src="https://cdn.shopify.com/shopifycloud/app-bridge.js"></script>
+  </head>
+  <body>
+    <h1>My Awesome App!</h1>
+
+    <body>
+  <button id="open-picker">Open resource picker</button>
+  <script>
+    document
+      .getElementById('open-picker')
+      .addEventListener('click', async () => {
+        await fetch('/test');
+      });
+  </script>
+</body>
+  </body>
