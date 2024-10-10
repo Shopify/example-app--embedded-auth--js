@@ -78,8 +78,8 @@ router.get('/authorize', async function (req, res, next) {
     }
 
     throw new Response(undefined, {
-      status: 403,
-      statusText: 'Forbidden',
+      status: 401,
+      statusText: 'Unauthorized',
       headers: new Headers({
         'X-Shopify-Retry-Invalid-Session-Request': '1',
       }),
